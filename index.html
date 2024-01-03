@@ -10,6 +10,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 <body>
+    <!-- This is the home section -->
     <section id="home">
         <nav>
             <a href="#home" class="logo">presentNow<span>.com</span></a>
@@ -36,6 +37,7 @@
             <img src="images/user.png" class="user-img">
         </div>
     </section>
+    <!-- This is the benefits section -->
     <section id="benefits">
         <div class="header-2">
             <div class="title hidden">
@@ -69,6 +71,7 @@
             </div>
         </div>
     </section>
+    <!-- This is the reviews section -->
     <section id="reviews">
         <div class="header-2">
             <div class="title hidden">
@@ -135,6 +138,7 @@
             </div>
         </div>
     </section>
+    <!-- This is the about section -->
     <section id="about">
         <div class="header-3">
             <div class="title hidden">
@@ -163,6 +167,7 @@
                     </div>
                 </div>
             </div>
+            <!-- This is the email contact form -->
             <div class="contact-container">
                 <form action="https://api.web3forms.com/submit" method="POST" class="contact-left hidden">
                     <div class="contact-left-title">
@@ -181,11 +186,14 @@
             </div>
         </div>
     </section>
+    <!-- This is the scroll to top button -->
     <button id="btnScrollToTop" onclick="scrollUp()">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
+    <!-- Importing gsap and text plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
+    <!-- This is the typewriter effect -->
     <script>
         const words = ["Free", "Efficient", "Precise", "Handy"];
 
@@ -229,6 +237,7 @@
             delay: .5
         });
     </script>
+    <!-- This is the toggle menu for mobile -->
     <script>
         let navbar = document.querySelector("nav");
         let menuLinks = document.getElementById("menu-links")
@@ -262,6 +271,7 @@
             }
         };
     </script>
+    <!-- This is the underline for the sections. I realized this was a bad idea :( -->
     <script>
         setInterval(() => {
             if(window.scrollY < 200) {
@@ -275,6 +285,7 @@
             }
         }, 100);
     </script>
+    <!-- This is the scroll animation -->
     <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -289,6 +300,7 @@
         const hiddenElements = document.querySelectorAll(".hidden");
         hiddenElements.forEach((el) => observer.observe(el));
     </script>
+    <!-- This is the scroll up event -->
     <script>
         function scrollUp(){
             window.scrollTo(0, 0);

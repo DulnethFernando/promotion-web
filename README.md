@@ -1,2 +1,3 @@
 # promotion-web
 I made this website as a side project for my resume. I have added most of the things I know in this website.
+I added a couple of motion graphics for experimenting my skills. I had the idea of creating this website when I tried to create my own presentation software. But, it didn't work out as well as I thought so, I had the great idea of making a website promoting this. I learned a lot of things about css while building this. I learned some motion graphics, bezier curves and scroll animations. I made this website in 3 days.
