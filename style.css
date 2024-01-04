@@ -64,12 +64,13 @@ nav .logo span {
 
 .header {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background: linear-gradient(#eefff9 0%, #ffccc1 49%, #dcdbff 100%);
     padding: 0 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .header h1 {
@@ -179,6 +180,12 @@ nav .logo span {
     }
 }
 
+@media (width: 370px) {
+    .header-content h1 {
+        font-size: 7px;
+    }
+}
+
 @media only screen and (max-width: 375px) {
     #line {
         display: block;
@@ -207,9 +214,11 @@ nav .logo span {
         right: auto;
         position: relative;
         margin-top: 100px;
+        bottom: 0;
     }
 
     .header-content {
+        width: 100%;
         position: absolute;
         bottom: 0;
         padding: 0 10%;
