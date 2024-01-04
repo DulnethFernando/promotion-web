@@ -121,7 +121,7 @@ nav .logo span {
     display: none;
 }
 
-.line {
+#line {
     display: none;
 }
 
@@ -166,12 +166,7 @@ nav .logo span {
     }
 
     #line {
-        display: block;
-        width: 60px;
-        height: 3px;
-        margin-left: 25px;
-        background: #fff;
-        transition: margin-left 0.5s;
+        display: none;
     }
 
     .menu-icon {
@@ -181,6 +176,17 @@ nav .logo span {
 
     .show-menu {
         max-height: 60px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #line {
+        display: block;
+        width: 60px;
+        height: 3px;
+        margin-left: 25px;
+        background: #fff;
+        transition: margin-left 0.5s;
     }
 }
 
